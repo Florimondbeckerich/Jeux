@@ -1,0 +1,80 @@
+/* Styles de base */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Conteneur principal */
+#app {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Titre principal */
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Titre des catégories */
+h2 {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Boutons de catégories et actions */
+button {
+    margin: 10px 0;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    max-width: 200px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Conteneur de mot affiché */
+#word-display p {
+    font-size: 1.8em;
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Classe pour cacher des éléments */
+.hidden {
+    display: none;
+}
+
+/* Animation de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
